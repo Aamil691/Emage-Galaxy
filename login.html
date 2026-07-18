@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | EMAGE GALAXY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+ <link href="./variables.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./components.css" rel="stylesheet">
+  <link href="./pages.css" rel="stylesheet">
+  <link href="./theme.css" rel="stylesheet">
+  <link href="./responsive.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dynamic-bg"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main class="page-content auth-page">
+    <div class="auth-card" data-aos="zoom-in">
+      <h2>Welcome Back</h2>
+      <p class="auth-subtitle">Login to access your dashboard and favourites</p>
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label class="form-label-galaxy" for="loginEmail">Email Address</label>
+          <input type="email" class="form-glass" id="loginEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label-galaxy" for="loginPassword">Password</label>
+          <input type="password" class="form-glass" id="loginPassword" placeholder="Enter password" required>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <label class="form-check-label" for="rememberMe" style="color:var(--text-secondary);font-size:0.9rem;">Remember Me</label>
+          </div>
+          <a href="forgot-password.html" style="font-size:0.9rem;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn-galaxy w-100"><i class="fas fa-sign-in-alt"></i> Login</button>
+      </form>
+      <div class="auth-divider">or continue with</div>
+      <div class="social-login">
+        <button class="social-btn" data-provider="Google"><i class="fab fa-google"></i> Google</button>
+        <button class="social-btn" data-provider="Facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+        <button class="social-btn" data-provider="GitHub"><i class="fab fa-github"></i> GitHub</button>
+      </div>
+      <p class="text-center mt-4" style="color:var(--text-secondary);font-size:0.9rem;">
+        Don't have an account? <a href="register.html">Register</a>
+      </p>
+      <p class="text-center mt-2" style="color:var(--text-muted);font-size:0.8rem;">
+        Demo: demo@emagegalaxy.com / demo123 | Admin: admin@emagegalaxy.com / admin123
+      </p>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./storage.js"></script>
+  <script src="./wallpapers-data.js"></script>
+  <script src="./theme.js"></script>
+  <script src="./auth.js"></script>
+  <script src="./access.js"></script>
+  <script src="./components.js"></script>
+  <script src="./wallpapers.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

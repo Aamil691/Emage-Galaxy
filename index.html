@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EMAGE GALAXY - Every Image Tells A Tale. Premium HD & 4K wallpapers.">
+  <title>EMAGE GALAXY | Every Image Tells A Tale</title>
+  <link rel="icon" type="image/png" href="../Emage-Galaxy/logo.png">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+ <link href="./variables.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./components.css" rel="stylesheet">
+  <link href="./pages.css" rel="stylesheet">
+  <link href="./theme.css" rel="stylesheet">
+  <link href="./responsive.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dynamic-bg"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main class="page-content page-transition">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-floating-icons">
+        <i class="fas fa-star floating-icon" style="top:20%;left:10%;"></i>
+        <i class="fas fa-moon floating-icon" style="top:30%;right:15%;"></i>
+        <i class="fas fa-rocket floating-icon" style="bottom:25%;left:20%;"></i>
+        <i class="fas fa-satellite floating-icon" style="bottom:30%;right:10%;"></i>
+      </div>
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-badge"><i class="fas fa-sparkles"></i> Premium Wallpaper Collection</div>
+          <h1 class="hero-title">Discover the <span class="text-gradient">Galaxy</span> of Wallpapers</h1>
+          <div class="hero-typing" id="typingText"></div>
+          <div class="hero-search">
+            <input type="search" id="heroSearch" placeholder="Search wallpapers, categories, tags...">
+            <button class="btn-galaxy" id="heroSearchBtn"><i class="fas fa-search"></i> Search</button>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>100+</strong><span>Wallpapers</span></div>
+            <div class="hero-stat"><strong>12</strong><span>Categories</span></div>
+            <div class="hero-stat"><strong>4K</strong><span>Ultra HD</span></div>
+            <div class="hero-stat"><strong>Free</strong><span>Downloads</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Wallpapers -->
+    <section class="section swiper-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Hot Right Now</span>
+          <h2 class="section-title">Trending Wallpapers</h2>
+          <p class="section-subtitle">The most popular wallpapers loved by our community</p>
+        </div>
+        <div id="trendingGrid" class="wallpaper-grid"></div>
+        <div class="text-center mt-4"><a href="categories.html" class="btn-outline-galaxy">View All <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <!-- Featured Wallpapers -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Handpicked</span>
+          <h2 class="section-title">Featured Wallpapers</h2>
+          <p class="section-subtitle">Curated collection of our finest wallpapers</p>
+        </div>
+        <div id="featuredGrid" class="wallpaper-grid"></div>
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Fresh</span>
+          <h2 class="section-title">New Arrivals</h2>
+          <p class="section-subtitle">Latest additions to our galaxy collection</p>
+        </div>
+        <div id="newArrivalsGrid" class="wallpaper-grid"></div>
+      </div>
+    </section>
+
+    <!-- Editor's Picks -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Editor's Choice</span>
+          <h2 class="section-title">Editor's Picks</h2>
+          <p class="section-subtitle">Selected by our team of design experts</p>
+        </div>
+        <div id="editorPicksGrid" class="wallpaper-grid"></div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Explore</span>
+          <h2 class="section-title">Browse Categories</h2>
+          <p class="section-subtitle">Find wallpapers that match your style</p>
+        </div>
+        <div class="row g-3" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <!-- Prime Membership Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="prime-banner" data-aos="zoom-in">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h2 class="mb-3"><i class="fas fa-crown" style="color:var(--gold);"></i> Become a Prime Member</h2>
+              <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Unlock exclusive wallpapers, upload your own creations, ad-free experience, and early access to new collections.</p>
+              <a href="subscription.html" class="btn-galaxy"><i class="fas fa-crown"></i> Upgrade to Prime</a>
+            </div>
+            <div class="col-lg-4 text-center d-none d-lg-block">
+              <i class="fas fa-circle-nodes fa-5x floating-icon" style="opacity:0.3;color:var(--primary-light);"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section">
+      <div class="container">
+        <div class="glass-card p-4 p-md-5 text-center" data-aos="fade-up">
+          <h3 class="mb-2">Stay in the Galaxy</h3>
+          <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Subscribe to get weekly wallpaper collections delivered to your inbox.</p>
+          <div class="row justify-content-center">
+            <div class="col-md-6 d-flex gap-2 newsletter-form">
+              <input type="email" class="form-glass" id="newsletterEmail" placeholder="Enter your email">
+              <button class="btn-galaxy" id="homeNewsletter"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script src="./wallpapers-data.js"></script>
+  <script src="./wallpapers.js"></script>
+  <script src="./storage.js"></script>
+  <script src="./theme.js"></script>
+  <script src="./auth.js"></script>
+  <script src="./access.js"></script>
+  <script src="./components.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

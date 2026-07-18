@@ -1,0 +1,121 @@
+# EMAGE GALAXY - GitHub Live Deployment Commands
+
+## 📋 Complete Step-by-Step Guide
+
+### Prerequisites
+✅ Git installed: https://git-scm.com/
+✅ GitHub account: https://github.com/signup
+✅ GitHub Repository created: https://github.com/new
+
+---
+
+## 🚀 STEP 1: Initialize Git Repository
+
+**Open PowerShell/Command Prompt in your project folder** and run:
+
+```powershell
+cd "C:\Users\arbaz\Downloads\New folder (6)"
+git init
+```
+
+Output should show:
+```
+Initialized empty Git repository in C:\Users\arbaz\Downloads\New folder (6)\.git/
+```
+
+---
+
+## 📦 STEP 2: Add All Files
+
+```powershell
+git add .
+```
+
+---
+
+## 💾 STEP 3: Create Your First Commit
+
+```powershell
+git commit -m "Initial commit: EMAGE GALAXY - Premium Wallpaper Collection"
+```
+
+---
+
+## 🌐 STEP 4: Connect to GitHub
+
+**Replace YOUR_USERNAME with your actual GitHub username:**
+
+```powershell
+git remote add origin https://github.com/YOUR_USERNAME/emage-galaxy.git
+git branch -M main
+git push -u origin main
+```
+
+When prompted for credentials:
+- Username: Your GitHub username
+- Password: Your GitHub personal access token (not your password!)
+
+**To create a personal access token:**
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token"
+3. Select scopes: "repo" 
+4. Copy the token and use it as password
+
+---
+
+## ⚙️ STEP 5: Enable GitHub Pages
+
+1. Go to: https://github.com/YOUR_USERNAME/emage-galaxy
+2. Click **Settings** (top navigation)
+3. Click **Pages** (left sidebar)
+4. Under "Build and deployment":
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/(root)**
+5. Click **Save**
+
+---
+
+## ✨ STEP 6: Your Site is Live!
+
+After 1-2 minutes, visit:
+
+```
+https://YOUR_USERNAME.github.io/emage-galaxy/
+```
+
+---
+
+## 🔄 Updating Your Site
+
+After making changes:
+
+```powershell
+git add .
+git commit -m "Your change description"
+git push origin main
+```
+
+Changes go live in 1-2 minutes!
+
+---
+
+## 💡 Tips
+
+- Your site works fully offline after first load
+- All data is stored in browser (LocalStorage)
+- No backend server needed
+- HTTPS is automatic
+- Custom domain support available
+
+---
+
+## 🔗 Useful Links
+
+- GitHub Pages: https://pages.github.com/
+- GitHub Docs: https://docs.github.com/en/pages
+- Git Documentation: https://git-scm.com/doc
+
+---
+
+**Need help?** Check DEPLOYMENT_GUIDE.md for troubleshooting!
